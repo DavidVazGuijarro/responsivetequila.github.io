@@ -1,10 +1,4 @@
-=begin
-task :default => [:test]
-
-task :test do
-  
-end
-=end
+require 'rubygems'
 
 task :default => [:build]
 
