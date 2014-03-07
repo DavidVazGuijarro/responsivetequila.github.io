@@ -1,0 +1,25 @@
+# Sample .travis.yml file:
+language: ruby
+
+rvm: # the Ruby versions to be used
+  - 2.1.0
+
+branches:
+  only:
+  - develop
+
+before_install:
+  - gem update # optional, update all gems
+  - gem install jekyll
+
+env:
+  global:
+  - secure: "aafdfe4b9c776836d0a9bd330701001b69afc322"
+
+  after_sucess:
+    - cd _site
+    - git config credential.helper "store --file=.git/credentials" 
+    - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+    - git add .
+    - git commit -am 'deploy'
+    - git push origin master
