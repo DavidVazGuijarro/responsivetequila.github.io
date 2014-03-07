@@ -12,14 +12,20 @@ before_install:
   - gem update # optional, update all gems
   - gem install jekyll
 
+before_script:
+  - git config --global user.name "responsivetequila"
+  - git config --global user.email "Leonel.perea@cimat.mx"
+  - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+
 env:
   global:
+  - GH_REPO="responsivetequila/responsivetequila.github.io"
   - secure: "NWoJn5d/PcxTwzAoCCKYknN2YzWPHTKAGJx5uuMbzfVuuGhUc+ktd0xisLNsPxUDNubEJcNeDVIIWua4ljMrGg7kbpBvXmuIHqAvUDdKbP5Mt3WrcuRIBoAsbrnoqyFzhH7izWLzt0kOiUUVxEKy3hsN6xEW/8oZoy4dJeNGvko="
 
 after_success:
   - cd _site
   - git config credential.helper "store --file=.git/credentials" 
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  - echo "https://$GH_TOKEN@github.com" > .git/credentials
   - git add .
   - git commit -am 'deploy'
   - git push origin master
