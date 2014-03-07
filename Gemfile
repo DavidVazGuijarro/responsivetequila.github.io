@@ -1,3 +1,6 @@
-source "http://rubygems.org"
+# A sample Gemfile
+source "https://rubygems.org"
 
-gem 'rake', '~> 10.1.1'
+# gem "rails"
+gem "rake"
+gem "jekyll"
