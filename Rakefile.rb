@@ -12,16 +12,22 @@ task :deploy do
   system "ls"
   system "git init"
   deploy_branch = 'master'
-  system "git remote set-url --push origin #{repo}"
-  system "git remote set-branches --add origin #{deploy_branch}"
+  system 'git init remote add responsivetequila.github.io https://github.com/responsivetequila/responsivetequila.github.io.git'
+  system 'git stash'
+  system 'git status'
+  system 'git pull'
   File.open('.git/credentials', 'w') do |f|
     f.write("https://#{ENV['GH_TOKEN']}:@github.com")
   end
+
+=begin
   system "git branch #{deploy_branch} origin/#{deploy_branch}"
   system "git add ."
   system 'git commit -am "Deploy"' 
   system "git push origin master --force"
   File.delete '.git/credentials'
+=end
+
 =begin
   
   
