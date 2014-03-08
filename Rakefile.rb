@@ -12,7 +12,7 @@ task :deploy do
   system "ls"
   system "git init"
   deploy_branch = 'master'
-  system 'git init remote add responsivetequila.github.io https://github.com/responsivetequila/responsivetequila.github.io.git'
+  system 'git remote add responsivetequila.github.io https://github.com/responsivetequila/responsivetequila.github.io.git'
   system 'git stash'
   system 'git status'
   system 'git pull'
