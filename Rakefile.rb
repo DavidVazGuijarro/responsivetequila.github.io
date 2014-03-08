@@ -7,6 +7,8 @@ task :build do
 end
 
 task :deploy do
+  system "cd _site"
+  system "ls"
   repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
   deploy_branch = 'master'
   if repo.match(/github\.com\.git$/)
