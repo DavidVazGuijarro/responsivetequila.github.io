@@ -22,6 +22,7 @@ task :deploy do
     f.write("https://#{ENV['GH_TOKEN']}:@github.com")
   end
   system "git fetch"
+  system "git push origin build"
 =begin
   system "git branch #{deploy_branch} origin/#{deploy_branch}"
   system "git add ."
