@@ -24,7 +24,8 @@ task :deploy do
   File.open('.git/credentials', 'w') do |f|
     f.write("https://#{ENV['GH_TOKEN']}:@github.com")
   end
-  system "git push"
+  system "git add ."
   system "git branch #{deploy_branch} origin/#{deploy_branch}"
+  system "git push origin master --force"
   File.delete '.git/credentials'
 end
