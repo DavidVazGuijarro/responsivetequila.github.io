@@ -12,6 +12,7 @@ task :deploy do
   system "pwd"
   system "Files"
   system "ls"
+  system "echo #{ENV['GH_TOKEN']}"
   system "git init"
   system "git checkout -b build"
   system "git add ."
