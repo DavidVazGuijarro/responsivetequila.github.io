@@ -10,7 +10,6 @@ branches:
 
 before_install:
   - gem update # optional, update all gems
-  - gem install jekyll
 
 before_script:
   - git config --global user.name "responsivetequila"
