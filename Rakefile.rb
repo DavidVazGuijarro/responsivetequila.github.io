@@ -10,8 +10,7 @@ task :deploy do
   Dir.chdir "_site"
   system "pwd"
   system "ls"
-  repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')
-  system 'echo "Repo: #{repo}"'
+  system "git init"
   deploy_branch = 'master'
   system "git remote set-url --push origin #{repo}"
   system "git remote set-branches --add origin #{deploy_branch}"
