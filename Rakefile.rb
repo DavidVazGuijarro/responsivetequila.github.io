@@ -1,6 +1,7 @@
 require 'rubygems'
+require 'rake/testtask'
 
-task :default => [:build]
+task :default => [:minify_css, :minify_js, :build]
 
 task :build do
   sh 'jekyll build'
@@ -8,44 +9,24 @@ end
 
 task :deploy do
   Dir.chdir "_site"
-  system 'echo "Working directory: "'
-  system "pwd"
-  system "Files"
-  system "ls"
-  system "echo #{ENV['GH_TOKEN']}"
-  system "git init"
-  system "git checkout -b build"
+  system "git status"
   system "git add ."
-  system 'git commit -am "build"'
-  system 'git remote add origin https://github.com/responsivetequila/responsivetequila.github.io.git'
-  system 'git status'
-  File.open('.git/credentials', 'w') do |f|
-    f.write("https://#{ENV['GH_TOKEN']}:@github.com")
-  end
-  system "git fetch"
-  system "git push origin build"
-=begin
-  system "git branch #{deploy_branch} origin/#{deploy_branch}"
-  system "git add ."
-  system 'git commit -am "Deploy"' 
-  system "git push origin master --force"
-  File.delete '.git/credentials'
-=end
+  system 'git commit -am "Deploy From Travis"'
+  system 'git push' 
+end
 
-=begin
-  
-  
-  system 'git fetch -q'
-  system "git config user.name '#{ENV['GIT_NAME']}'"
-  system "git config user.email '#{ENV['GIT_EMAIL']}'"
-  system 'git config credential.helper "store --file=.git/credentials"'
-  File.open('.git/credentials', 'w') do |f|
-    f.write("https://#{ENV['GH_TOKEN']}:@github.com")
+task :minify_css do
+  Dir.glob("**/*.css").each do |f|
+    unless f.end_with? ".min.css" 
+      sh "juicer merge #{f} --force"
+    end
   end
-  system "git branch #{deploy_branch} origin/#{deploy_branch}"
-  system "git add ."
-  system 'git commit -am "Deploy"' 
-  system "git push origin master --force"
-  File.delete '.git/credentials'
-=end
+end
+
+task :minify_js do
+  Dir.glob("**/*.js").each do |f|
+    unless f.end_with? '.min.js' 
+      sh "juicer merge #{f} --force"
+    end
+  end
 end

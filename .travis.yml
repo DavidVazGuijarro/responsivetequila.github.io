@@ -1,25 +1,19 @@
-# Sample .travis.yml file:
 language: ruby
-
-rvm: # the Ruby versions to be used
-  - 2.1.0
-
+rvm:
+- 2.0.0
 branches:
   only:
   - develop
-
+  except:
+  - master
 before_install:
-  - gem update # optional, update all gems
-
+- gem update
 before_script:
-  - git config --global user.name "responsivetequila"
-  - git config --global user.email "Leonel.perea@cimat.mx"
-  - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
-
+- git config --global user.name "responsivetequila"
+- git config --global user.email "leonel.perea@cimat.mx"
+- git clone --quiet --branch=master https://${GH_TOKEN}@github.com/responsivetequila/responsivetequila.github.io.git _site
+after_success:
+- bundle exec rake deploy
 env:
   global:
-  - GH_REPO="responsivetequila/responsivetequila.github.io"
-  - secure: "NWoJn5d/PcxTwzAoCCKYknN2YzWPHTKAGJx5uuMbzfVuuGhUc+ktd0xisLNsPxUDNubEJcNeDVIIWua4ljMrGg7kbpBvXmuIHqAvUDdKbP5Mt3WrcuRIBoAsbrnoqyFzhH7izWLzt0kOiUUVxEKy3hsN6xEW/8oZoy4dJeNGvko="
-
-after_success:
-  - bundle exec rake deploy
+  - secure: BMZ4nvASGi2F3TZ9GDvNWnBa87QvJbWMYGJKZEE69zuApAGzM0FGQGXlYWAXZdt13mSDC92bF+CzaSrkguMvtERRC5QV/+tRqhEr5E/JGz01iHDYfL+fUEBJ0UaiE9XyQJLN79XNNC+U2RHev/SlxMgOeIAlkONzUVbv5UMlu5g=
