@@ -5,17 +5,19 @@ title: OUR BLOG
 
 {% for post in paginator.posts %}
 	<div class="background-light-grey contents">
-    	<h5 class = "postTitle"><a href="{{post.url}}" class = "postLink">{{ post.title }}</a></h5>
-    	<h6>Posted {{ post.date | date_to_string }}  
+    	<img src="" width="300px;" height="50px;">
+    	<h5>Posted {{ post.date | date_to_string }}  
             {%if post.author != null %}
             by: {{post.author}}
             {% endif %}
-        </h6>
+        </h5>
+    	<h3 class = "postTitle"><a href="{{post.url}}" class = "postLink">{{ post.title }}</a></h3>
         {% if post.image != null %}
             <img src="{{post.image}}" alt = "{{post.title}}">
         {% endif %}
     	<div class = "post">
     		{{ post.content }}
+            
     	</div>
           <a href="{{ post.url }}#disqus_thread"></a>
   	</div>

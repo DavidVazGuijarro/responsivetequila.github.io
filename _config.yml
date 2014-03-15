@@ -1,6 +1,9 @@
 name: Responsive Tequila
+description: "Blog de Responsive Tequila"
+url: "http://responsivetequila.github.io"
+paginate: 10
 markdown: redcarpet
-pygments: true
+comments: true
 
 exclude: [Gemfile, Gemfile.lock, Rakefile.rb, test]
 include: [.travis.yml]
