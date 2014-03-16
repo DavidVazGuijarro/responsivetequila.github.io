@@ -5,6 +5,7 @@ paginate: 10
 markdown: redcarpet
 comments: true
 pygments: true
+permalink: pretty
 
 exclude: [Gemfile, Gemfile.lock, Rakefile.rb, vendor, test]
 include: [.travis.yml, .htaccess]
