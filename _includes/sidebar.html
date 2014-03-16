@@ -1,0 +1,10 @@
+<div class="hidden-xs col-xs-12 col-sm-3 col-md-3 col-ls-3">
+	<div class="categorias">
+	  <h4>CATEGORÍAS</h4>
+	  {% for category in site.categories %}
+	  <p><a  style="font-size: 1.{{ category | last | size | times: 100 | divided_by: site.categories.size}}em" href="/{{ category | first | CategoryLink}}">       
+	    {{ category | first }} ({{ category | last | size }})
+	  </a></p>
+	  {% endfor %}
+	</div>
+</div>
