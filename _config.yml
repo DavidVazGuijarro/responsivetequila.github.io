@@ -1,11 +1,17 @@
-name: Responsive Tequila
-description: "Blog de Responsive Tequila"
-url: "http://responsivetequila.github.io"
-paginate: 10
-markdown: redcarpet
+author: 'iLeonelperea, AntonioCabrera'
+baseurl: /
 comments: true
+description: "Blog de Responsive Tequila"
+markdown: redcarpet
+name: Responsive Tequila
+paginate: 10
+paginate_path: /blog/page:num/
+permalink: /blog/:year/:month/:day/:title
 pygments: true
-permalink: pretty
+relative_permalinks: false
+url: "http://responsivetequila.mx"
+safe: true
+timezone: America/Mexico City
 
 exclude: [Gemfile, Gemfile.lock, Rakefile.rb, vendor, test]
-include: [.travis.yml, .htaccess]
+include: [_pages, .travis.yml, .htaccess]

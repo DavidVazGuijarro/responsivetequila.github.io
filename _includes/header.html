@@ -1,3 +1,4 @@
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +36,8 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">INICIO</a></li>
-        <li><a href="#">ACERCA DE</a></li>
+        <li {% if page.url == '/inicio/' %}class="active" {% endif %}><a href="#">INICIO</a></li>
+        <li {% if page.url == '/blog/' %}class="active" {% endif %}><a href="#">BLOG</a></li>
       </ul>
     </div>
   </div>
