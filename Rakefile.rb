@@ -14,19 +14,3 @@ task :deploy do
   system 'git commit -am "Deploy From Travis"'
   system 'git push' 
 end
-
-task :minify_css do
-  Dir.glob("**/*.css").each do |f|
-    unless f.end_with? ".min.css" 
-      sh "juicer merge #{f} --force"
-    end
-  end
-end
-
-task :minify_js do
-  Dir.glob("**/*.js").each do |f|
-    unless f.end_with? '.min.js' 
-      sh "juicer merge #{f} --force"
-    end
-  end
-end
