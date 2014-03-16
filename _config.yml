@@ -7,4 +7,4 @@ comments: true
 pygments: true
 
 exclude: [Gemfile, Gemfile.lock, Rakefile.rb, vendor, test]
-include: [.travis.yml]
+include: [.travis.yml, .htaccess]
