@@ -4,6 +4,7 @@ url: "http://responsivetequila.github.io"
 paginate: 10
 markdown: redcarpet
 comments: true
+pygments: true
 
-exclude: [Gemfile, Gemfile.lock, Rakefile.rb, test]
+exclude: [Gemfile, Gemfile.lock, Rakefile.rb, vendor, test]
 include: [.travis.yml]
