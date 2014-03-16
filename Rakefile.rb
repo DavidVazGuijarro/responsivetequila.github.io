@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'rake/testtask'
 
-task :default => [:minify_css, :minify_js, :build]
+task :default => [:build]
 
 task :build do
   sh 'jekyll build'
