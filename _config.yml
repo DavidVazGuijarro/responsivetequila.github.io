@@ -12,6 +12,7 @@ relative_permalinks: false
 url: "http://responsivetequila.mx"
 safe: true
 timezone: America/Mexico City
+excerpt_separator: "<!-- more -->"
 
 exclude: [Gemfile, Gemfile.lock, Rakefile.rb, vendor, test]
 include: [_pages, .travis.yml, .htaccess]

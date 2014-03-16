@@ -3,6 +3,8 @@ layout: post
 title:  "Continuos Integration y Continuous deployment para HTML, CSS y Javascript"
 date:   2014-03-13 16:39:39
 categories: Continuos-Integration Continuous-Deployment
+noindex: false
+updated: 2014-03-16
 ---
 
 Uno de los problemas cuando se trabaja en un proyecto de desarrollo de front end es primero, asegurar que el código que es intercambiado en el repositorio cumple con un estándar de codificación, luego, que estos pasen pruebas de unidad que ayuden a llegar a cierto nivel de calidad.
