@@ -1,5 +1,4 @@
 User-agent: * 
-Disallow: /inicio/
-Disallow: /about/
+Disallow:
 
 Sitemap: http://responsivetequila.mx/sitemap.xml
