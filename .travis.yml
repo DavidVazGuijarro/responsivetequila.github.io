@@ -9,11 +9,11 @@ branches:
 before_install:
 - gem update
 before_script:
-- git config --global user.name "responsivetequila"
-- git config --global user.email "leonel.perea@cimat.mx"
+- git config --global user.name "ileonelperea"
+- git config --global user.email "iticleonel.len@gmail.com"
 - git clone --quiet --branch=master https://${GH_TOKEN}@github.com/responsivetequila/responsivetequila.github.io.git _site
 after_success:
 - bundle exec rake deploy
 env:
   global:
-  - secure: BMZ4nvASGi2F3TZ9GDvNWnBa87QvJbWMYGJKZEE69zuApAGzM0FGQGXlYWAXZdt13mSDC92bF+CzaSrkguMvtERRC5QV/+tRqhEr5E/JGz01iHDYfL+fUEBJ0UaiE9XyQJLN79XNNC+U2RHev/SlxMgOeIAlkONzUVbv5UMlu5g=
+  - secure: EaXSu5anazE25LmrjGTvrwb377TnvMGVxNmT/VbEUF48IxgMZLIjx2J2PZC/iX0q+Y4O1QUPvTs5G3Me4/oc8llY/+nsdSif0iQ5G5WRTwEiw+iBi4yFhIuKamvQzbLqftm7bawgCILRHkseAWYwOYZvYvJMv7yfl/zB7RHInow=
