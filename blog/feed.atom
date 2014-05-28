@@ -7,7 +7,47 @@
 	<author>
 		<name>iLeonelperea, AntonioCabrera</name>
 	</author>
-	<updated>2014-05-21T06:23:25+00:00</updated>
+	<updated>2014-05-28T15:39:45+00:00</updated>
+
+	<entry>
+		<title type="text">The quest for competitiveness</title>
+		<link href="http://responsivetequila.mx/blog/2014/05/19/the-quest-for-competitiveness" />
+		<id>http://responsivetequila.mx/blog/2014/05/19/the-quest-for-competitiveness</id>
+		<published>2014-05-19T16:39:39+00:00</published>
+		<updated>2014-05-19T00:00:00+00:00</updated>
+		<summary type="html">So, yeah, we started to create templates in hopes to enter to the marketplaces. We started looking for one graphical designer with the experience to produce such templates. In our three month ordeal to find one we had pretty much different results than we expected.
+
+We started by looking for one locally, or one of our friends, for our surprise, we found that their prices were just to high. We could not afford to get one of those, we even tried to get a partnership with them, but they just didn&amp;#39;t found the idea attractive. Maybe it&amp;#39;s a cultural thing? Who knows...
+
+Somehow we got the idea to get some help from the internet, and we started to look in different marketplaces, we found that they had better prices and even they made better works than them. Maybe the key it&amp;#39;s the competition on the area, here, it&amp;#39;s just a few of them, on sites like envato or  freelancer, you are competing with people from all around the world. This impulses you to hone your skills and put a better price. It is not even cheaper, it&amp;#39;s faster.
+</summary>
+		<content type="html">foobar&lt;p&gt;So, yeah, we started to create templates in hopes to enter to the marketplaces. We started looking for one graphical designer with the experience to produce such templates. In our three month ordeal to find one we had pretty much different results than we expected.&lt;/p&gt;
+
+&lt;p&gt;We started by looking for one locally, or one of our friends, for our surprise, we found that their prices were just to high. We could not afford to get one of those, we even tried to get a partnership with them, but they just didn&amp;#39;t found the idea attractive. Maybe it&amp;#39;s a cultural thing? Who knows...&lt;/p&gt;
+
+&lt;p&gt;Somehow we got the idea to get some help from the internet, and we started to look in different marketplaces, we found that they had better prices and even they made better works than them. Maybe the key it&amp;#39;s the competition on the area, here, it&amp;#39;s just a few of them, on sites like envato or  freelancer, you are competing with people from all around the world. This impulses you to hone your skills and put a better price. It is not even cheaper, it&amp;#39;s faster.&lt;/p&gt;
+</content>
+	</entry>
+
+	<entry>
+		<title type="text">The Grunt Diaries</title>
+		<link href="http://responsivetequila.mx/blog/2014/05/12/the-grunt-diaries" />
+		<id>http://responsivetequila.mx/blog/2014/05/12/the-grunt-diaries</id>
+		<published>2014-05-12T16:39:39+00:00</published>
+		<updated>2014-05-12T00:00:00+00:00</updated>
+		<summary type="html">We had our nifty difty ruby script in travis for continuous integration. It did it&amp;#39;s job very well, we must say, but it was very slow. It was not slow due the inner nature of Ruby, it was slow because it needed a lot of dependencies for everything, if the build needed like 3 minutes to complete, it spend another 5 or more minutes to install everything it needed, so, yeah, 10 minutes finishing the build it&amp;#39;s something really not desirable.
+
+In those days Pragmatic Programmer had a very cool coupon with 50% of discount in their books, one of those was &amp;#39;Automating With Grunt&amp;#39;. Putting this in perspective, Grunt is to Node.js what Rake is to Ruby, I&amp;#39;ve used rake in different projects, but I&amp;#39;ve never used Node before, I only knew that Bootstrap used it on their repo.
+
+On this last week, I had the task to learn by heart the book, much to my surprise, it&amp;#39;s very intuitive, and a lot alike to Rake, it also divides everything in tasks and it&amp;#39;s a lot, but a lot faster than Ruby, since it has a lot less dependencies. Stay tuned for how we will change the 
+</summary>
+		<content type="html">foobar&lt;p&gt;We had our nifty difty ruby script in travis for continuous integration. It did it&amp;#39;s job very well, we must say, but it was very slow. It was not slow due the inner nature of Ruby, it was slow because it needed a lot of dependencies for everything, if the build needed like 3 minutes to complete, it spend another 5 or more minutes to install everything it needed, so, yeah, 10 minutes finishing the build it&amp;#39;s something really not desirable.&lt;/p&gt;
+
+&lt;p&gt;In those days Pragmatic Programmer had a very cool coupon with 50% of discount in their books, one of those was &amp;#39;Automating With Grunt&amp;#39;. Putting this in perspective, Grunt is to Node.js what Rake is to Ruby, I&amp;#39;ve used rake in different projects, but I&amp;#39;ve never used Node before, I only knew that Bootstrap used it on their repo.&lt;/p&gt;
+
+&lt;p&gt;On this last week, I had the task to learn by heart the book, much to my surprise, it&amp;#39;s very intuitive, and a lot alike to Rake, it also divides everything in tasks and it&amp;#39;s a lot, but a lot faster than Ruby, since it has a lot less dependencies. Stay tuned for how we will change the &lt;/p&gt;
+</content>
+	</entry>
 
 	<entry>
 		<title type="text">Continuos Integration y Continuous deployment para HTML, CSS y Javascript</title>

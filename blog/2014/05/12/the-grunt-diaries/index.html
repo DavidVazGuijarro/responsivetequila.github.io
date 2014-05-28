@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Continuos Integration y Continuous deployment para HTML, CSS y Javascript</title>
+  <title>The Grunt Diaries</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -84,44 +84,15 @@
   <div class="container">
     <div class="row">
 		<div class="col-xs-12 col-sm-9 col-md-9 col-ls-9">
-			<h5>Continuos Integration y Continuous deployment para HTML, CSS y Javascript</h5>
-<p class="meta">13 Mar 2014</p>
+			<h5>The Grunt Diaries</h5>
+<p class="meta">12 May 2014</p>
 
 <div class="post">
-<p>Uno de los problemas cuando se trabaja en un proyecto de desarrollo de front end es primero, asegurar que el código que es intercambiado en el repositorio cumple con un estándar de codificación, luego, que estos pasen pruebas de unidad que ayuden a llegar a cierto nivel de calidad.</p>
+<p>We had our nifty difty ruby script in travis for continuous integration. It did it&#39;s job very well, we must say, but it was very slow. It was not slow due the inner nature of Ruby, it was slow because it needed a lot of dependencies for everything, if the build needed like 3 minutes to complete, it spend another 5 or more minutes to install everything it needed, so, yeah, 10 minutes finishing the build it&#39;s something really not desirable.</p>
 
-<p>&quot;Continuos Integration es una práctica de desarrollo de software en la que un equipo integra su trabajo frecuentemente, usualmente una vez por día por persona, llevando a multiples integraciones por día. Cada integración es verificada y automatizada (incluyendo el test) para detectar errores rápidamente.&quot;</p>
+<p>In those days Pragmatic Programmer had a very cool coupon with 50% of discount in their books, one of those was &#39;Automating With Grunt&#39;. Putting this in perspective, Grunt is to Node.js what Rake is to Ruby, I&#39;ve used rake in different projects, but I&#39;ve never used Node before, I only knew that Bootstrap used it on their repo.</p>
 
-<p>Por esto, como proyecto integrador para la materia de Validación y Verificación de Sotware creamos un script que se encarga de la automatización de estas tareas. Los puntos a tratar fueron los siguientes:</p>
-
-<ul>
-<li>Verificar que el CSS es válido</li>
-<li>Verificar que el JS es válido</li>
-<li>Minificar el CSS</li>
-<li>Minificar el JS</li>
-<li>Verificar que el HTML es válido</li>
-<li>Ver que selectores de CSS no son utilizados</li>
-<li>Verificar que la calificación del sitio sea mayor que 80 por ciento en PageSpeed</li>
-<li>Hacer el deploy en algún servidor</li>
-<li>Hacer pruebas de integración en varios browsers</li>
-</ul>
-
-<p>El primer paso fue buscar que herramienta nos permite hacer la integración continua y build de un proyecto, para esto viene Travis CI, Travis es una herramienta de código abierto para la integración continua de proyectos que soporta varios lenguajes, en nuestro caso utilizamos Ruby, Travis se encarga de instalar las dependencias que necesitaremos, sólo hay que especificarlas en un archivo Gemfile o instalarlas via apt-get.</p>
-
-<p>El flujo de trabajo es el siguiente: Primero clonamos el repositorio en la rama master en la carpeta _site, en la cual va a ser generado con Jekyll, luego ejecutamos las pruebas unitarias, las cuales son automáticas, buscamos todos los archivos CSS en una carpeta, cada uno de estos genera al vuelo un método para Unit Testing, lo mismo para los archivos de JavaScript, estos dos están en una sola tarea de rake, luego minificamos (eliminamos espacios no necesarios y comentarios) estos mismos archivos, suponiendo que pasó la prueba anterior.</p>
-
-<p>Luego, generamos el sitio y empezamos a validar el HTML, en este caso, luego de pasar estas pruebas le hacemos el deploy a github-pages, esto para poder hacer las pruebas de PageSpeed y Selenium con Sauce Labs, el cual es un proovedor de estos servicios con integración a Travis CI.</p>
-
-<p>Los problemas que encontramos son principalmente de la documentación de las API&#39;s, sobre todo de Sauce Labs, por que al parecer la cambiaron hace poco y la documentación para Ruby no está muy clara, y por esto no pudimos hacer completa la integración con Travis.</p>
-
-<p>Lo que sigue a continuación es:
-- Completar la integración con Travis
-- Optimizar Imágenes
-- Habiliar gzip
-- Exportar los reportes a HTML y subirlos al repositorio
-- Automatizar las pruebas para Selenium
-- Diseñar pruebas para diseño responsivo
-- Crear un area de staging con un servidor privado y correr las pruebas de PageSpeed y Sauce Labs desde ahí</p>
+<p>On this last week, I had the task to learn by heart the book, much to my surprise, it&#39;s very intuitive, and a lot alike to Rake, it also divides everything in tasks and it&#39;s a lot, but a lot faster than Ruby, since it has a lot less dependencies. Stay tuned for how we will change the </p>
 
 </div>
 <div id="disqus_thread"></div>
