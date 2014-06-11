@@ -3,10 +3,10 @@ layout: default
 title: OUR BLOG
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 	<div class="background-light-grey contents">
     	<h5 class = "postTitle"><a href="{{post.url}}" class = "postLink">{{ post.title }}</a></h5>
-    	<h6>Posted {{ post.date | date_to_string }}
+    	<h6>Posted {{ post.date | date_to_string }}  
             {%if post.author != null %}
             by: {{post.author}}
             {% endif %}
@@ -15,13 +15,9 @@ title: OUR BLOG
             <img src="{{post.image}}" alt = "{{post.title}}">
         {% endif %}
     	<div class = "post">
-    		{% if post.excerpt %}
-    			{{ post.excerpt }}
-    			<p> <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">Read the rest of this entry »</span></a></p>
-  			{% else %}
-    			{{ post.content}}
-  			{% endif %}
+        {{ post.content | truncatewords:200 | strip_html }}
     	</div>
   	</div>
 	<div class="space"></div>
+    <a href="{{post.url}}"><button class="btn btn-large btn-danger">Read More</button></a>
 {% endfor %}
