@@ -6,7 +6,7 @@ title: OUR BLOG
 {% for post in paginator.posts %}
 	<div class="background-light-grey contents">
     	<h5 class = "postTitle"><a href="{{post.url}}" class = "postLink">{{ post.title }}</a></h5>
-    	<h6>Posted {{ post.date | date_to_string }}  
+    	<h6>Posted {{ post.date | date_to_string }}
             {%if post.author != null %}
             by: {{post.author}}
             {% endif %}
@@ -15,7 +15,12 @@ title: OUR BLOG
             <img src="{{post.image}}" alt = "{{post.title}}">
         {% endif %}
     	<div class = "post">
-    		{{ post.content }}
+    		{% if post.excerpt %}
+    			{{ post.excerpt }}
+    			<p> <a href="{{ post.url }}/#more" class="more-link"><span class="readmore">Read the rest of this entry »</span></a></p>
+  			{% else %}
+    			{{ post.content}}
+  			{% endif %}
     	</div>
   	</div>
 	<div class="space"></div>
