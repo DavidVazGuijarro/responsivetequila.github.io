@@ -7,7 +7,139 @@
 	<author>
 		<name>iLeonelperea, AntonioCabrera</name>
 	</author>
-	<updated>2014-06-10T23:40:13+00:00</updated>
+	<updated>2014-06-11T06:09:21+00:00</updated>
+
+	<entry>
+		<title type="text">Magmaconf Brief Summary</title>
+		<link href="http://responsivetequila.mx/blog/2014/06/11/magmaconf-brief-summary" />
+		<id>http://responsivetequila.mx/blog/2014/06/11/magmaconf-brief-summary</id>
+		<published>2014-06-11T00:00:00+00:00</published>
+		<updated>2014-06-11T00:00:00+00:00</updated>
+		<summary type="html">A very brief Summary of MagmaConf
+
+Beyond pushing code: How to optimize your career by David Meyer
+
+Not everything is coding, there are different practices to boost your career
+
+Are we really engineers? by Joe Wright
+
+Engineers take a mathemathical approach to solving problems, coders do not
+
+Death to Cookies by Konstantin Haase
+
+Cookies are dangerous and therefore you should use another techniques to avoid being hacked.
+
+Intro to Computer Vision, Machine Learning and Genetic Algorithms by Daniel Ríos
+
+A very brief intro to machine learning using images and some python libraries.
+
+Bullet Trains: Performance Tuning Rails by Nick Rowe
+
+Caching everything is not a solution, cache only in certain places and use optimization tools.
+
+Keynote by Fred George
+
+Not everything is about writing code, it is also about people too.
+
+GitHub Enterprise&amp;#39; toolchain by David Calavera
+
+How they optimized github enterpraise toolchain and some of it&amp;#39;s features.
+
+Sentiment Analysis using Support Vector Machines in Ruby by Matt Kirk
+
+Some libraries to use vector machines in ruby and a brief exampe
+
+Elixir = Ruby, A Pattern Matching by Johnny Win
+
+Similarities between ruby and elixir.
+
+Software Icebergs: Development Was the Easy Part by André Arko
+
+Developers and non-technical people use different languajes, and here lies another way to fail a project.
+
+Rewriting Critical Parts of Your Application Using... Science! by Jesse Toth
+
+Write code, measure, analyze and then do what you have to do to optimize your code.
+
+Standing on the shoulders of giants by Zachary Scott
+
+A tour of some of important libraries that have been in Ruby even before gems existed.
+
+Keynote by Sandi Metz
+
+You have to do things with passion and perseverance, otherwise you will fail.
+
+Urban Legends: What You Code Makes You Who You Are by PJ Hagerty
+
+Tools are just a means to an end. So why do developers think the language they use defines the problems they solve?
+
+Refactoring Education by Leo Salazar
+
+Graduates exit university and enter the IT workforce largely unprepared for what they encounter. We have seen a gap in knowledge between where graduates stand and where we, in the industry
+</summary>
+		<content type="html">foobar&lt;h1&gt;A very brief Summary of MagmaConf&lt;/h1&gt;
+
+&lt;h3&gt;Beyond pushing code: How to optimize your career by David Meyer&lt;/h3&gt;
+
+&lt;p&gt;Not everything is coding, there are different practices to boost your career&lt;/p&gt;
+
+&lt;h3&gt;Are we really engineers? by Joe Wright&lt;/h3&gt;
+
+&lt;p&gt;Engineers take a mathemathical approach to solving problems, coders do not&lt;/p&gt;
+
+&lt;h3&gt;Death to Cookies by Konstantin Haase&lt;/h3&gt;
+
+&lt;p&gt;Cookies are dangerous and therefore you should use another techniques to avoid being hacked.&lt;/p&gt;
+
+&lt;h3&gt;Intro to Computer Vision, Machine Learning and Genetic Algorithms by Daniel Ríos&lt;/h3&gt;
+
+&lt;p&gt;A very brief intro to machine learning using images and some python libraries.&lt;/p&gt;
+
+&lt;h3&gt;Bullet Trains: Performance Tuning Rails by Nick Rowe&lt;/h3&gt;
+
+&lt;p&gt;Caching everything is not a solution, cache only in certain places and use optimization tools.&lt;/p&gt;
+
+&lt;h3&gt;Keynote by Fred George&lt;/h3&gt;
+
+&lt;p&gt;Not everything is about writing code, it is also about people too.&lt;/p&gt;
+
+&lt;h3&gt;GitHub Enterprise&amp;#39; toolchain by David Calavera&lt;/h3&gt;
+
+&lt;p&gt;How they optimized github enterpraise toolchain and some of it&amp;#39;s features.&lt;/p&gt;
+
+&lt;h3&gt;Sentiment Analysis using Support Vector Machines in Ruby by Matt Kirk&lt;/h3&gt;
+
+&lt;p&gt;Some libraries to use vector machines in ruby and a brief exampe&lt;/p&gt;
+
+&lt;h3&gt;Elixir = Ruby, A Pattern Matching by Johnny Win&lt;/h3&gt;
+
+&lt;p&gt;Similarities between ruby and elixir.&lt;/p&gt;
+
+&lt;h3&gt;Software Icebergs: Development Was the Easy Part by André Arko&lt;/h3&gt;
+
+&lt;p&gt;Developers and non-technical people use different languajes, and here lies another way to fail a project.&lt;/p&gt;
+
+&lt;h3&gt;Rewriting Critical Parts of Your Application Using... Science! by Jesse Toth&lt;/h3&gt;
+
+&lt;p&gt;Write code, measure, analyze and then do what you have to do to optimize your code.&lt;/p&gt;
+
+&lt;h3&gt;Standing on the shoulders of giants by Zachary Scott&lt;/h3&gt;
+
+&lt;p&gt;A tour of some of important libraries that have been in Ruby even before gems existed.&lt;/p&gt;
+
+&lt;h3&gt;Keynote by Sandi Metz&lt;/h3&gt;
+
+&lt;p&gt;You have to do things with passion and perseverance, otherwise you will fail.&lt;/p&gt;
+
+&lt;h3&gt;Urban Legends: What You Code Makes You Who You Are by PJ Hagerty&lt;/h3&gt;
+
+&lt;p&gt;Tools are just a means to an end. So why do developers think the language they use defines the problems they solve?&lt;/p&gt;
+
+&lt;h3&gt;Refactoring Education by Leo Salazar&lt;/h3&gt;
+
+&lt;p&gt;Graduates exit university and enter the IT workforce largely unprepared for what they encounter. We have seen a gap in knowledge between where graduates stand and where we, in the industry&lt;/p&gt;
+</content>
+	</entry>
 
 	<entry>
 		<title type="text">The quest for competitiveness</title>
