@@ -3,7 +3,7 @@ layout: default
 title: OUR BLOG
 ---
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 	<div class="background-light-grey contents">
     	<h5 class = "postTitle"><a href="{{post.url}}" class = "postLink">{{ post.title }}</a></h5>
     	<h6>Posted {{ post.date | date_to_string }}  
@@ -15,8 +15,9 @@ title: OUR BLOG
             <img src="{{post.image}}" alt = "{{post.title}}">
         {% endif %}
     	<div class = "post">
-    		{{ post.content }}
+        {{ post.content | truncatewords:200 | strip_html }}
     	</div>
   	</div>
 	<div class="space"></div>
+    <a href="{{post.url}}"><button class="btn btn-large btn-danger">Read More</button></a>
 {% endfor %}
