@@ -7,7 +7,55 @@
 	<author>
 		<name>iLeonelperea, AntonioCabrera</name>
 	</author>
-	<updated>2014-06-11T16:16:19+00:00</updated>
+	<updated>2014-06-18T03:25:55+00:00</updated>
+
+	<entry>
+		<title type="text">Semester Wrap-up</title>
+		<link href="http://responsivetequila.mx/blog/2014/06/17/semester-wrap-up" />
+		<id>http://responsivetequila.mx/blog/2014/06/17/semester-wrap-up</id>
+		<published>2014-06-17T16:39:39+00:00</published>
+		<updated>2014-06-17T00:00:00+00:00</updated>
+		<summary type="html">This semester was our first attempt to enter to the themes marketplace; so far the things we did right were:
+
+
+Learn which platforms are provate: some platforms only accept members within their circles, and it&amp;#39;s pretty unknown what you should do to enter to them.
+Find where we can find feedback about our themes: The twitter account only exists to be a little helper, you should seek the people on the forums.
+Our implementation times were appropiate, we didn&amp;#39;t took more time than the usual.
+Hire a foreign designer: local designers suffered from a rockstar syndrome, and they weren&amp;#39;t that good anyways, we found a foreign developer that gave us bang for our buck.
+
+
+The things that didn&amp;#39;t went so well...
+
+
+We should have written more on our blog, since this experiences should help other people to pass this hurdles easily.
+So far, we had a CI script made in Ruby, but we didn&amp;#39;t implemented it in our project for several reasons, this would have helped with things that we shouldn&amp;#39;t have worried about, like HTML verification.
+We got stuck several months looking for a local designer, it was unsucessful and a waste of time.
+We didn&amp;#39;t made a checklist to check to don&amp;#39;t forget what things we should check before submiting a theme.
+
+
+Last, but not least we are going to launch a marketplace for the local market (then other countries), and we are going to integreate some very cool features to make the approval process easier and clear for the users.
+</summary>
+		<content type="html">foobar&lt;p&gt;This semester was our first attempt to enter to the themes marketplace; so far the things we did right were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learn which platforms are provate: some platforms only accept members within their circles, and it&amp;#39;s pretty unknown what you should do to enter to them.&lt;/li&gt;
+&lt;li&gt;Find where we can find feedback about our themes: The twitter account only exists to be a little helper, you should seek the people on the forums.&lt;/li&gt;
+&lt;li&gt;Our implementation times were appropiate, we didn&amp;#39;t took more time than the usual.&lt;/li&gt;
+&lt;li&gt;Hire a foreign designer: local designers suffered from a rockstar syndrome, and they weren&amp;#39;t that good anyways, we found a foreign developer that gave us bang for our buck.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The things that didn&amp;#39;t went so well...&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We should have written more on our blog, since this experiences should help other people to pass this hurdles easily.&lt;/li&gt;
+&lt;li&gt;So far, we had a CI script made in Ruby, but we didn&amp;#39;t implemented it in our project for several reasons, this would have helped with things that we shouldn&amp;#39;t have worried about, like HTML verification.&lt;/li&gt;
+&lt;li&gt;We got stuck several months looking for a local designer, it was unsucessful and a waste of time.&lt;/li&gt;
+&lt;li&gt;We didn&amp;#39;t made a checklist to check to don&amp;#39;t forget what things we should check before submiting a theme.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Last, but not least we are going to launch a marketplace for the local market (then other countries), and we are going to integreate some very cool features to make the approval process easier and clear for the users.&lt;/p&gt;
+</content>
+	</entry>
 
 	<entry>
 		<title type="text">A very brief Summary of MagmaConf</title>
