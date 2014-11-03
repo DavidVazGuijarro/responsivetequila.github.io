@@ -4,13 +4,13 @@
 	<!-- Site/Blog Indexes -->
 	<url>
 		<loc>http://responsivetequila.mx</loc>
-		<lastmod>2014-06-18T03:25:55+00:00</lastmod>
+		<lastmod>2014-11-03T14:28:27+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://responsivetequila.mx/blog/</loc>
-		<lastmod>2014-06-18T03:25:55+00:00</lastmod>
+		<lastmod>2014-11-03T14:28:27+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
