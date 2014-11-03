@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "A very brief Summary of MagmaConf"
+date:   2014-06-11 16:39:39
+categories: Conferences
+noindex: false
+updated: 2014-06-11
+---
+
 #A very brief Summary of MagmaConf
 
 ###Beyond pushing code: How to optimize your career by David Meyer
@@ -7,6 +16,8 @@ Not everything is coding, there are different practices to boost your career
 ###Are we really engineers? by Joe Wright
 
 Engineers take a mathemathical approach to solving problems, coders do not
+
+<!-- more -->
 
 ###Death to Cookies by Konstantin Haase
 
@@ -57,8 +68,3 @@ Tools are just a means to an end. So why do developers think the language they u
 
 ###Refactoring Education by Leo Salazar
 Graduates exit university and enter the IT workforce largely unprepared for what they encounter. We have seen a gap in knowledge between where graduates stand and where we, in the industry
-
-
-
-
-
